@@ -8,7 +8,7 @@
 //터미널
 git checkout -b "LeeSangHyeok"
 
-git push -u origin "LeeSangHyeok"
+git push origin "LeeSangHyeok"
 ```
 
 1번째 명령어는 새로운 프랜치를 생성하고, 생성된 브랜치에 즉시 이동하는 명령어 입니다
@@ -27,12 +27,12 @@ leesanghyeok
 
 html의 파일명은 index.html,<br>
 css의 파일명은 style.css,<br>
-javascript의 파일명은 fn.js<br>
+javascript의 파일명은 app.js<br>
 
 로 통일합니다
 
 만약에 각 파일이 2개 이상이면
-index2.html, style2.css, fn2.js처럼 뒤에 숫자를 붙이시면 됩니다
+index2.html, style2.css, app2.js처럼 뒤에 숫자를 붙이시면 됩니다
 
 ## 4. 클론코딩을 전부 완료 했으면 github에 게시합니다
 
@@ -40,7 +40,7 @@ index2.html, style2.css, fn2.js처럼 뒤에 숫자를 붙이시면 됩니다
 // 터미널
 git add .
 git commit -m "클론코딩 완성"
-git push -u origin "LeeSangHyeok"
+git push origin "LeeSangHyeok"
 ```
 
 1번째 명령어는 모든 변경사항을 commit하기전에 준비시키는 명령어<br>
