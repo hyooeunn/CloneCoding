@@ -136,7 +136,6 @@ button {
     width: 250px;
     padding: 0 0.2vw;
 }
-
 /* 마우스 가져다 되면 나타나는 거 */
 .movie:hover {
     transform: scale(1.5);
