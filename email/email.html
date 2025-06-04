@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="email.css">
+  <link rel="icon" href="favicon.ico">
+  <title>로그인 - Google 계정</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="container">
+      <div class="group">
+        <div class="left">
+          <div class="logo-area">
+            <img id="icon" src="google-logo.png" alt="google">
+          </div>
+          <div class="email-area">
+            <span id="email-found">이메일 찾기</span>
+          </div>
+          <div id="text">
+            전화번호 또는 복구 이메일을 입력하세요.
+          </div>
+        </div>
+        <div class="right">
+          <div class="email-box">
+            <input type="email" class="email" placeholder="전화번호 또는 이메일">
+          </div>
+        </div>
+        <div class="low">
+          <div class="low-container">
+            <div class="next">
+              <button class="next-button">
+                <span>다음</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="language">
+        <select name="language" id="language">
+          <option value="ko">한국어</option>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+        </select>
+      </div>
+      <div class="menu">
+        <a href="https://support.google.com/accounts?hl=ko&visit_id=638846503401467080-1353178583&rd=2&p=account_iph#topic=3382296">
+          <input type="button" id="help" value="도움말">
+        </a>
+        <a href="https://policies.google.com/privacy?gl=KR&hl=ko">
+          <input type="button" id="alone" value="개인정보처리방침">
+        </a>
+        <a href="https://policies.google.com/terms?gl=KR&hl=ko">
+          <input type="button" id="ToU" value="약관">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
