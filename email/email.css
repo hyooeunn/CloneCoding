@@ -5,6 +5,7 @@
 body {
   background-color: #F0F4F9;
   margin: 0px;
+  overflow: hidden;
 }
 
 .main-container {
@@ -50,7 +51,7 @@ body {
   margin: 24px 0px 0px;
 }
 
-#email-found {
+#emailFind {
   font-size: 36px;
 }
 
@@ -136,6 +137,13 @@ select {
 
 .menu {
   display: flex;
+}
+
+#help:hover,
+#alone:hover,
+#ToU:hover {
+  background-color: rgba(220, 220, 220, 0.6);
+  border-radius: 8px;
 }
 
 input[type="button"] {
