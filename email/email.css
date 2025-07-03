@@ -105,7 +105,7 @@ body {
 .next-button {
   background-color: #0B57D0;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 30px;
   border: none;
   display: inline-flex;
   align-items: center;
@@ -124,7 +124,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0px 280px;
+  margin: 0px 200px;
 }
 
 select {

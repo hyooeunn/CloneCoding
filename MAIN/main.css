@@ -133,7 +133,7 @@ a {
 .next-button {
   background-color: #0B57D0;
   color: #ffffff;
-  border-radius: 20px;
+  border-radius: 30px;
   border: none;
   display: inline-flex;
   align-items: center;
@@ -151,11 +151,44 @@ a {
   border: none;
   display: inline-flex;
   align-items: center;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .make-button:hover {
   background-color: rgba(240, 243, 246, 0.9);
-  border-radius: 20px;
+  border-radius: 30px;
+}
+
+.make-content{
+  display: none;
+  position: absolute;
+  background-color: #f0f4f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+  padding: 8px 0;
+  font-size: 14px;
+  top: 52px;
+  font-weight: 500;
+}
+
+.make-content a {
+  color: black;
+  padding: 0 16px;
+  text-decoration: none;
+  display: block;
+  height: 48px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.make-content a:hover {
+  background-color: #E9EBEF;
+  cursor: pointer;
 }
 
 span {
@@ -171,7 +204,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0px 280px;
+  margin: 0px 200px;
 }
 
 select {

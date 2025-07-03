@@ -1,3 +1,8 @@
+document.querySelector(".make-button").addEventListener("click", function() {
+  document.querySelector(".make-content").style.display = 
+    (document.querySelector(".make-content").style.display === 'none') ? 'block' : 'none';
+});
+
 const languageData = {
   ko: {
     title: "로그인 - Google 계정",
