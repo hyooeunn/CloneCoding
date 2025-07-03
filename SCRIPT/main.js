@@ -8,7 +8,7 @@ const languageData = {
     title: "로그인 - Google 계정",
     login: "로그인",
     description: "Google 계정으로 로그인합니다. 이 계정은 브라우저의 다른 Google 앱에서 사용할 수 있습니다.",
-    placeholder: "이메일 또는 휴대전화",
+    emailLabel: "이메일 또는 휴대전화",
     emailForgot: '<a href="../EMAIL/email.html">이메일을 잊으셨나요?</a>',
     text: "내 컴퓨터가 아닌가요? 게스트 모드를 사용하여 비공개로 로그인하세요.",
     hyper: '<a href="https://support.google.com/chrome/answer/6130773?hl=ko"> 게스트 모드 사용 방법 자세히 알아보기</a>',
@@ -23,7 +23,7 @@ const languageData = {
     title: "Sign in - Google Accounts",
     login: "Sign in",
     description: "with your Google Account. This account will be available to other Google apps in the browser.",
-    placeholder: "Email or phone",
+    emailLabel: "Email or phone",
     emailForgot: '<a href="../EMAIL/email.html">Forgot email?',
     text: "Not your computer? Use Guest mode to sign in privately.",
     hyper: '<a href="https://support.google.com/chrome/answer/6130773?hl=en"> Learn more about using Guest mode</a>',
@@ -38,7 +38,7 @@ const languageData = {
     title: "ログイン - Google アカウント",
     login: "ログイン",
     description: "Google アカウントでログインします。このアカウントは、ブラウザ内の他の Google アプリで利用できます。",
-    placeholder: "メールアドレスまたは電話番号",
+    emailLabel: "メールアドレスまたは電話番号",
     emailForgot: '<a href="../EMAIL/email.html">メールアドレスを忘れた場合',
     text: "ご自分のパソコンでない場合は、ゲストモードを使用して非公開でログインしてください。",
     hyper: '<a href="https://support.google.com/chrome/answer/6130773?hl=ja">ゲストモードの使い方の詳細</a>',
@@ -54,7 +54,7 @@ const languageData = {
 const select = document.getElementById('language-box');
 const loginText = document.getElementById('login');
 const descriptionText = document.getElementById('description');
-const emailInput = document.querySelector('.email');
+const emailInput = document.querySelector('.emailLabel');
 const emailForgotText = document.getElementById('emailForgot');
 const textText = document.getElementById('text');
 const hyperText = document.querySelector('.hyper');
@@ -69,7 +69,7 @@ select.addEventListener('change', function () {
   document.title = languageData[selectedLang].title;
   loginText.textContent = languageData[selectedLang].login;
   descriptionText.textContent = languageData[selectedLang].description;
-  emailInput.placeholder = languageData[selectedLang].placeholder;
+  emailInput.textContent = languageData[selectedLang].emailLabel;
   emailForgotText.innerHTML = languageData[selectedLang].emailForgot;
   textText.textContent = languageData[selectedLang].text;
   hyperText.innerHTML = languageData[selectedLang].hyper;

@@ -130,9 +130,18 @@ footer {
 select {
   background-color: #f0f4f9;
   border: none;
-  margin-top: 5px;
+  margin-top: 20px;
   width: 200px;
-  height: 48px;
+  height: 30px;
+}
+
+#language-box:hover {
+  background-color: rgba(220, 220, 220, 0.6);
+  border-radius: 10px;
+}
+
+#language-box:checked {
+  border: 2px blue;
 }
 
 .menu {
