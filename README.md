@@ -14,5 +14,9 @@
 - 이메일 입력 후 "다음" 클릭 시 비밀번호 입력 화면으로 이동 (JS로 연결)
 - 더 나은 반응형 디자인 구현
 
-[미리보기]
-(./screenshot/로그인.png)
+<p float="left">
+  <img src="./screenshot/로그인.png" width="200"/>
+  <img src="./screenshot/로그인_영어.png" width="200"/>
+  <img src="./screenshot/로그인_일본어.png" width="200">
+  <img src="./screenshot/이메일찾기.png" width="200">
+</p>
