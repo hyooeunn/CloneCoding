@@ -285,6 +285,10 @@ input::placeholder {
   height: 25px; 
 }
 
+nav {
+  margin-top: 8px;
+}
+
 /* #nav > ul */
 nav ul {
   display: flex;
@@ -293,6 +297,11 @@ nav ul {
   font-size: 0.9rem;
   line-height: 20px;
   padding: 0;
+}
+
+#service {
+  position: relative;
+  top: -2px;
 }
 
 nav a {
@@ -326,7 +335,7 @@ nav a:visited {
 }
 
 nav li {
-  width: 64px;
+  width: 57px;
   margin-left: 4px;
 }
 
@@ -350,42 +359,126 @@ nav li a div::before {
   height: 50px;
 }
 
+/* 입력창 밑에 있는 아이콘 */
+/* 메일 */
 nav li:nth-of-type(1) a div::after {
   background-position: -205px -219px;
 }
 
+/* 카페 */
 nav li:nth-of-type(2) a div::after {
   background-position: -41px -219px;
 }
 
+/* 블로그 */
 nav li:nth-of-type(3) a div::after {
   background-position: 0px -219px;
 }
 
+/* 스토어 */
 nav li:nth-of-type(4) a div::after {
   background-position: -41px -260px;
 }
 
+/* 뉴스 */
 nav li:nth-of-type(5) a div::after {
   background-position: -270px -205px;
 }
 
+/* 증권 */
 nav li:nth-of-type(6) a div::after {
   background-position: -123px -260px;
 }
 
+/* 부동산 */
 nav li:nth-of-type(7) a div::after {
   background-position: 0px -260px;
 }
 
+/* 지도 */
 nav li:nth-of-type(8) a div::after {
   background-position: -270px 0px;
 }
 
+/* 웹툰 */
 nav li:nth-of-type(9) a div::after {
   background-position: -164px -260px;
 }
 
+/* 치지직 */
+nav li:nth-of-type(10) a div::after{
+  /* background-position: -366px -141px; */
+  content: "";
+  top: 5%;
+  display: block; /* 또는 inline-block */
+  background-image: url("IMG/치지직.png");
+  background-size: cover; /* 또는 contain */
+}
+
+nav li:nth-of-type(10) a div {
+  position: relative; /* ::after의 기준이 될 부모 */
+}
+
+/* 더보기 */
 nav li:nth-of-type(11) a div::after {
   background-position: -270px -164px;
+}
+
+nav li a div:hover::after {
+  border-radius: 40%;
+  /* box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .12); */
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.18);
+}
+
+/* 아이콘 아래 글씨 */
+nav li a span {
+  display: inline-block;
+  margin: 7px 0 0 5px;
+}
+
+main {
+  margin-top: 27px;
+  display: flex;
+}
+
+#main-left {
+  width: 830px;
+  margin-right: 30px;
+}
+
+#main-right {
+  width: 420px;
+}
+
+aside[id$=ad] {
+  /* 광고 넣을 곳 */
+  background-color: gray;
+  border-radius: 8px;
+}
+
+#main-left-ad {
+  height: 130px;
+  margin-bottom: 16px;
+}
+
+section[id^=main] {
+  box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, .04);
+  border-radius: 8px;
+}
+
+#main-newstand {
+  height: 426px;
+}
+
+#main-login {
+  height: 164px;
+  margin-bottom: 16px;
+}
+
+#main-weather {
+  height: 236px;
+}
+
+#main-right-ad {
+  height: 240px;
 }
