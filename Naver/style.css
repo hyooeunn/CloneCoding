@@ -68,6 +68,7 @@
 html, body, form, ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 #warp {
@@ -456,9 +457,10 @@ aside[id$=ad] {
   border-radius: 8px;
 }
 
-#main-left-ad {
+.main-left-ad {
   height: 130px;
-  margin-bottom: 16px;
+  margin-bottom: 16px; 
+  border-radius: 8px;
 }
 
 section[id^=main] {
@@ -468,6 +470,11 @@ section[id^=main] {
 
 #main-newstand {
   height: 426px;
+}
+
+#content-header {
+  padding: 18px 20px 17px;
+  height: 58px;
 }
 
 #main-login {
@@ -481,4 +488,18 @@ section[id^=main] {
 
 #main-right-ad {
   height: 240px;
+}
+
+#main-issue,
+#main-right-contentAd,
+#main-weather {
+  margin-top: 16px;
+}
+
+#main-issue {
+  height: 56px;
+}
+
+#main-right-contentAd {
+  height: 172px;
 }
