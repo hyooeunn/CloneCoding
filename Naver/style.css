@@ -65,10 +65,15 @@
   --color_shop_rgb: 152, 88, 245;
 }
 
-html, body, form, ul {
+html, body, form, ul, p {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 #warp {
@@ -286,155 +291,156 @@ input::placeholder {
   height: 25px; 
 }
 
-nav {
-  margin-top: 8px;
+#service {
+  position: relative;
+  top: -2px;
 }
 
-/* #nav > ul */
-nav ul {
+nav {
+  margin-top: 8px;
+
+  ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
   font-size: 0.9rem;
   line-height: 20px;
   padding: 0;
-}
+  }
 
-#service {
-  position: relative;
-  top: -2px;
-}
+  a {
+    text-decoration: none;
+    text-align: center;
+  }
 
-nav a {
-  text-decoration: none;
-  text-align: center;
-}
+  a div {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+  }
 
-nav a div {
-  width: 40px;
-  height: 40px;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-}
+  a div::after {
+    position: relative;
+    z-index: 1;
+    content: '';
+    margin: 2px;
+    display: inline-block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.6bbd194f.png);
+    background-size: 468px 456px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+  }
 
-nav a div::after {
-  position: relative;
-  z-index: 1;
-  content: '';
-  margin: 2px;
-  display: inline-block;
-  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.6bbd194f.png);
-  background-size: 468px 456px;
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
-}
+  a:visited {
+    color: black;
+  }
 
-nav a:visited {
-  color: black;
-}
+  li {
+    width: 57px;
+    margin-left: 4px;
+  }
 
-nav li {
-  width: 57px;
-  margin-left: 4px;
-}
+  /* nth-of-child() 서로 다른 태그를 구분하지 않는 것*/
+  /* nth-of-type() 서로 구분하는 것 */
+  li:nth-of-type(1) {
+    margin-left: 0;
+  }
 
-/* nth-of-child() 서로 다른 태그를 구분하지 않는 것*/
-/* nth-of-type() 서로 구분하는 것 */
-nav li:nth-of-type(1) {
-  margin-left: 0;
-}
+  li a div::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -3px;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.6bbd194f.png);
+    background-size: 468px 456px;
+    background-position: -153px -142px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+  }
 
-nav li a div::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -1px;
-  left: -3px;
-  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.6bbd194f.png);
-  background-size: 468px 456px;
-  background-position: -153px -142px;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
-}
 
-/* 입력창 밑에 있는 아이콘 */
-/* 메일 */
-nav li:nth-of-type(1) a div::after {
-  background-position: -205px -219px;
-}
 
-/* 카페 */
-nav li:nth-of-type(2) a div::after {
-  background-position: -41px -219px;
-}
+  /* 입력창 밑에 있는 아이콘 */
+  /* 메일 */
+  li:nth-of-type(1) a div::after {
+    background-position: -205px -219px;
+  }
 
-/* 블로그 */
-nav li:nth-of-type(3) a div::after {
-  background-position: 0px -219px;
-}
+  /* 카페 */
+  li:nth-of-type(2) a div::after {
+    background-position: -41px -219px;
+  }
 
-/* 스토어 */
-nav li:nth-of-type(4) a div::after {
-  background-position: -41px -260px;
-}
+  /* 블로그 */
+  li:nth-of-type(3) a div::after {
+    background-position: 0px -219px;
+  }
 
-/* 뉴스 */
-nav li:nth-of-type(5) a div::after {
-  background-position: -270px -205px;
-}
+  /* 스토어 */
+  li:nth-of-type(4) a div::after {
+    background-position: -41px -260px;
+  }
 
-/* 증권 */
-nav li:nth-of-type(6) a div::after {
-  background-position: -123px -260px;
-}
+  /* 뉴스 */
+  li:nth-of-type(5) a div::after {
+    background-position: -270px -205px;
+  }
 
-/* 부동산 */
-nav li:nth-of-type(7) a div::after {
-  background-position: 0px -260px;
-}
+  /* 증권 */
+  li:nth-of-type(6) a div::after {
+    background-position: -123px -260px;
+  }
 
-/* 지도 */
-nav li:nth-of-type(8) a div::after {
-  background-position: -270px 0px;
-}
+  /* 부동산 */
+  li:nth-of-type(7) a div::after {
+    background-position: 0px -260px;
+  }
 
-/* 웹툰 */
-nav li:nth-of-type(9) a div::after {
-  background-position: -164px -260px;
-}
+  /* 지도 */
+  li:nth-of-type(8) a div::after {
+    background-position: -270px 0px;
+  }
 
-/* 치지직 */
-nav li:nth-of-type(10) a div::after{
-  /* background-position: -366px -141px; */
-  content: "";
-  top: 5%;
-  display: block; /* 또는 inline-block */
-  background-image: url("IMG/치지직.png");
-  background-size: cover; /* 또는 contain */
-}
+  /* 웹툰 */
+  li:nth-of-type(9) a div::after {
+    background-position: -164px -260px;
+  }
 
-nav li:nth-of-type(10) a div {
-  position: relative; /* ::after의 기준이 될 부모 */
-}
+  /* 치지직 */
+  li:nth-of-type(10) a div::after{
+    /* background-position: -366px -141px; */
+    content: "";
+    top: 5%;
+    display: block; /* 또는 inline-block */
+    background-image: url("IMG/치지직.png");
+    background-size: cover; /* 또는 contain */
+  }
 
-/* 더보기 */
-nav li:nth-of-type(11) a div::after {
-  background-position: -270px -164px;
-}
+  li:nth-of-type(10) a div {
+    position: relative; /* ::after의 기준이 될 부모 */
+  }
 
-nav li a div:hover::after {
-  border-radius: 40%;
-  /* box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .12); */
-  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.18);
-}
+  /* 더보기 */
+  li:nth-of-type(11) a div::after {
+    background-position: -270px -164px;
+  }
 
-/* 아이콘 아래 글씨 */
-nav li a span {
-  display: inline-block;
-  margin: 7px 0 0 5px;
+  li a div:hover::after {
+    border-radius: 40%;
+    /* box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .12); */
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.18);
+  }
+
+  /* 아이콘 아래 글씨 */
+  li a span {
+    display: inline-block;
+    margin: 7px 0 0 5px;
+  }
 }
 
 main {
@@ -447,59 +453,207 @@ main {
   margin-right: 30px;
 }
 
-#main-right {
-  width: 420px;
-}
-
-aside[id$=ad] {
-  /* 광고 넣을 곳 */
-  background-color: gray;
-  border-radius: 8px;
-}
-
-.main-left-ad {
-  height: 130px;
-  margin-bottom: 16px; 
-  border-radius: 8px;
-}
-
-section[id^=main] {
-  box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, .04);
-  border-radius: 8px;
-}
-
 #main-newstand {
-  height: 426px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, .04);
 }
 
 #content-header {
   padding: 18px 20px 17px;
-  height: 58px;
 }
 
-#main-login {
-  height: 164px;
-  margin-bottom: 16px;
+#content-header ul li {
+  display: inline-block;
 }
 
-#main-weather {
-  height: 236px;
+#content-header-text::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #d3d5d7;
+  background-color: var(--color_dot_divider);
+  margin: 9px 7px 0;
+  border-radius: 50%;
+  vertical-align: top;
 }
 
-#main-right-ad {
+#content-header a {
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 800;
+  vertical-align: top;
+  color: rgba(8, 8, 8, .5);
+  -webkit-font-smoothing: antialiased;
+}
+
+.content-header-tab::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 13px;
+  width: 1px;
+  height: 15px;
+  background-color: var(--color_dot_divider);
+  transform: skewX(-15deg);
+}
+
+img[class$=ad] {
+  /* 광고 넣을 곳 */
+  background-color: gray;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, .04);
+}
+
+/* 광고들 */
+.main-left-ad {
+  height: 130px;
+  margin-bottom: 16px; 
+}
+
+.main-right-ad {
   height: 240px;
 }
 
-#main-issue,
-#main-right-contentAd,
-#main-weather {
-  margin-top: 16px;
+.main-right-banner-ad {
+  height: 80px;
+  
 }
 
-#main-issue {
-  height: 56px;
-}
 
-#main-right-contentAd {
-  height: 172px;
+
+#main-right {
+  width: 420px;
+
+  #main-login {
+    /* height: 164px; */
+    margin-bottom: 16px;
+    padding: 21px 20px 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #login-box {
+    display: block;
+    margin-top: 13px;
+    padding: 17px 0;
+    border-radius: 4px;
+    background-color: #03c75a;
+    text-decoration: none;
+    color: white;
+  }
+
+  i {
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.6bbd194f.png);
+    background-size: 468px 456px;
+    background-position: -130px -301px;
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 14px;
+    display: inline-block;
+    margin: 5.5px 8px 0 0;
+    vertical-align: top;
+  };
+
+  #login-bottom {
+    width: 380px;
+    font-size: 13px;
+  }
+
+  /* #login-bottom a {
+    display: inline-block;
+  } */
+
+  #FindPw::before, #signUp::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #d3d5d7;
+    background-color: var(--color_dot_divider);
+    margin: 4px 12px 0;
+    vertical-align: top
+  }
+
+  section[id^=main] {
+    box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, .04);
+    border-radius: 8px;
+  }
+
+  #main-newstand {
+    height: 426px;
+  }
+
+  #content-header {
+  padding: 18px 20px 17px;
+  height: 58px;
+  }
+
+  #main-weather {
+    height: 236px;
+  }
+
+  #main-issue,
+  #main-right-content-ad,
+  #main-weather,
+  #login-bottom,
+  .main-right-banner-ad {
+    margin-top: 16px;
+  }
+
+  #main-issue {
+    /* height: 56px; */
+    padding: 8px 18px;
+  }
+
+  #main-issue div {
+    padding: 8px 0;
+    display: flex;
+  }
+
+  #IssueBanner-tag {
+    display: inline-block;
+    background-color: #e64746;
+    color: #fff;
+    margin-right: 8px;
+    padding: 3px 9px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  #IssueBanner-text {
+    font-weight: bold;
+  }
+
+  #main-right-content-ad {
+    height: 172px;
+  }
+
+  #shoppingView {
+    display: flex;
+    padding: 18px;
+    overflow: hidden;
+  }
+
+  #shoppingView-header-group {
+    width: 80px;
+    margin-right: 18px;
+  }
+
+  #shoppingView-header-title-box {
+    line-height: 23px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  #shoppingView-header-title-box span {
+    display: block;
+    text-align: left;
+  }
 }
