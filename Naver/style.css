@@ -735,6 +735,7 @@ img[class$=ad] {
 
   #pagination button {
     position: absolute;
+    background-color: var(--color_block_bg);
     width: 32px;
     height: 32px;
     border: 1px solid var(--color_button_border);
@@ -746,7 +747,35 @@ img[class$=ad] {
     right: 270px;
   }
 
+  #pagination-btn1-icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    margin-left: 2px;
+    border-left: 2px solid #80868c;
+    border-bottom: 2px solid #80868c;
+    margin-left: 1px;
+  }
+
   #pagination-btn2 {
     right: -15px;
+  }
+
+  #pagination-btn2-icon {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    margin-left: -2px;
+    border-top: 2px solid #80868c;
+    border-right: 2px solid #80868c;
+    margin-left: -1px;
   }
 }
