@@ -489,6 +489,11 @@ main {
   -webkit-font-smoothing: antialiased;
 }
 
+.content-header-tab {
+  padding-left: 26px;
+  position: relative;
+}
+
 .content-header-tab::before {
   content: "";
   display: block;
@@ -499,6 +504,31 @@ main {
   height: 15px;
   background-color: var(--color_dot_divider);
   transform: skewX(-15deg);
+}
+
+#content-header-tabLive {
+  background-color: var(--color_live_news_price);
+  display: inline-block;
+  margin: 3px 0 0 5px;
+  padding: 0 5px 0 4px;
+  font-size: 11px;
+  line-height: 18px;
+  border-radius: 9px;
+  vertical-align: top;
+  color: #fff;
+}
+
+#content-header-tabLive::before {
+  content: "";
+  display: inline-block;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.6bbd194f.png);
+  background-size: 468px 456px;
+  background-position: -271px -318px;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 10px;
+  margin: 4px 3px 0 0;
+  vertical-align: top;
 }
 
 img[class$=ad] {
@@ -644,6 +674,7 @@ img[class$=ad] {
   #shoppingView-header-group {
     width: 80px;
     margin-right: 18px;
+    position: relative;
   }
 
   #shoppingView-header-title-box {
@@ -655,5 +686,67 @@ img[class$=ad] {
   #shoppingView-header-title-box span {
     display: block;
     text-align: left;
+  }
+
+  #shoppingView-tagAd {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: var(--color_caption2);
+    border: 1px solid var(--color_border_out);
+    border-radius: 4px;
+    width: 30px;
+    font-size: 13px;
+  }
+
+  #shoppingView-shopping-group {
+    display: flex;
+  }
+
+  #shoppingView-itemList {
+    overflow: hidden;
+  }
+
+  #shoppingView-itemList li {
+    float: left;
+    width: 90px;
+  }
+
+  #shoppingView-itemList li a img {
+    width: 90px;
+    height: 90px;
+    border-radius: 4px;
+    border: 1px solid var(--color_button_border);
+  }
+
+  .shoppingView-title {
+    display: -webkit-box;
+    font-size: 15px;
+    -webkit-box-orient: vertical;
+  }
+
+  .shoppingView-titleBox {
+    height: 46px;
+  }
+
+  #pagination {
+    position: relative;
+  }
+
+  #pagination button {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--color_button_border);
+    border-radius: 50%;
+    bottom: 80px;
+  }
+
+  #pagination-btn1 {
+    right: 270px;
+  }
+
+  #pagination-btn2 {
+    right: -15px;
   }
 }
