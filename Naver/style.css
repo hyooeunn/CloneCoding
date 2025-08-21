@@ -531,6 +531,11 @@ main {
   vertical-align: top;
 }
 
+#content-header-sub {
+  margin: 0 20px;
+  padding: 12px 20px;
+}
+
 img[class$=ad] {
   /* 광고 넣을 곳 */
   background-color: gray;
@@ -778,4 +783,38 @@ img[class$=ad] {
     border-right: 2px solid #80868c;
     margin-left: -1px;
   }
+}
+
+#main-weather {
+  padding: 0 18px;
+}
+
+#DailyBoard {
+  padding: 6px 0;
+  display: flex;
+  line-height: 40px;
+}
+
+#DailyBoard-link {
+  border: 1px solid var(--color_border_in_divider);
+  padding: 0 10px 0 7px;
+  color: var(--color_caption2);
+  border-radius: 15px;
+  font-size: 11px;
+  display: inline-block;
+  height: 26px;
+  line-height: 25px;
+}
+
+#DailyBoard-link::before {
+  content: "";
+  display: inline-block;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.6bbd194f.png);
+  background-size: 468px 456px;
+  background-position: 0px -444px;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  margin: 6px 2px 0 0;
+  vertical-align: top;
 }
